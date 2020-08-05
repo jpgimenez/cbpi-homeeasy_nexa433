@@ -12,7 +12,7 @@ class Nexa433(ActorBase):
     
     def on(self, power=100):
         try:
-            print self.plug
+            print(self.plug)
             command = "/home/pi/actor-on.sh " + str(self.plug)
             subprocess.call(command, shell=True)
         except Exception as e:
